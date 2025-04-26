@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+<TITLE>
+My first web page 
+</TITLE>SegulaC
+</HEAD>
+</HTML><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segula Collection</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4e6d7; /* Light beige background */
+            color: #5a4b42; /* Dark brown text */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #8b4513; /* Brown */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #5a4b42; /* Dark brown */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #3e2723; /* Slightly darker brown */
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5a4b42;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #3e2723;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #8b4513; /* Brown */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+            .dropdown-content {
+                position: static;
+            }
+        }
+        /* Animations */
+        h2 {
+            color: #8b4513;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Shopping Cart */
+        .cart {
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .cart-icon {
+            font-size: 24px;
+            color: white;
+        }
+        .cart-items {
+            display: none;
+            position: absolute;
+            background-color: #f4e6d7;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .cart-items p {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart:hover .cart-items {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/150x50?text=Segula+Logo" alt="Segula Collection Logo">
+    <h1>Segula Collection</h1>
+    <p>Your Vision for Modest and Christ-Centered Fashion</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <div class="dropdown">
+        <a href="#">Pages</a>
+        <div class="dropdown-content">
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#blog">Blog</a>
+        </div>
+    </div>
+    <a href="#stock">Available Stock</a>
+    <a href="#reviews">Client Reviews</a>
+    <a href="#subscribe">Subscribe</a>
+    <a href="#support">Customer Support</a>
+    <div class="cart">
+        <span class="cart-icon">🛒</span>
+        <div class="cart-items">
+            <p>Your Cart is Empty</p>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section id="home">
+        <h2>Welcome to Segula Collection</h2>
+        <p>Segula Collection is your ultimate destination for eco-friendly and stylish fashion. 
+           Our main vision is to bring people to modest fashion and promote Christo-centric values through our designs and services.</p>
+        <img src="https://via.placeholder.com/800x400?text=Welcome+to+Segula+Collection" alt="Welcome Image">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Segula Collection, we believe in creating fashion that reflects modesty, sustainability, and faith. 
+           Our mission is to inspire individuals to embrace their unique style while staying true to their values.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide a range of services to help you look and feel your best:</p>
+        <ul>
+            <li><strong>Wardrobe Revamping:</strong> Transform your existing wardrobe into something fresh and exciting.</li>
+            <li><strong>Styling Services:</strong> Personalized styling sessions tailored to your needs.</li>
+            <li><strong>Fashion Consulting:</strong> Expert advice on sustainable and modest fashion choices.</li>
+            <li><strong>Custom Orders:</strong> Create bespoke pieces that suit your style and values.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Fashion Blog</h2>
+        <article>
+            <h3>How to Style Modest Outfits</h3>
+            <p>Learn how to create stylish and modest outfits for everyday wear.</p>
+            <img src="https://via.placeholder.com/800x400?text=Modest+Outfit+Tips" alt="Modest Outfit Tips">
+        </article>
+        <article>
+            <h3>The Importance of Christ-Centered Fashion</h3>
+            <p>Discover why modesty and faith-based values are essential in today's fashion industry.</p>
+            <img src="https://via.placeholder.com/800x400?text=Christ+Centered+Fashion" alt="Christ Centered Fashion">
+        </article>
+    </section>
+
+    <section id="stock">
+        <h2>Available Stock</h2>
+        <p>Explore our latest collection of sustainable and fashionable items:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Eco-Friendly Jacket</td>
+                    <td>Sustainable jacket for casual outings</td>
+                    <td>$99.99</td>
+                </tr>
+                <tr>
+                    <td>Organic Cotton Dress</td>
+                    <td>Perfect for formal events</td>
+                    <td>$149.99</td>
+                </tr>
+                <tr>
+                    <td>Bamboo Sport Shoes</td>
+                    <td>Comfortable shoes for workouts</td>
+                    <td>$79.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="reviews">
+        <h2>Client Reviews</h2>
+        <article>
+            <h3>"A Game-Changer in Modest Fashion!"</h3>
+            <p>"I absolutely love the styling services from Segula Collection. They transformed my wardrobe while keeping my values intact!" - Sarah L.</p>
+        </article>
+        <article>
+            <h3>"Treasure Trove of Modest Products"</h3>
+            <p>"Every piece I've bought from Segula Collection feels like a treasure. The quality and design reflect true modesty!" - James T.</p>
+        </article>
+    </section>
+
+    <section id="subscribe">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <section id="support">
+        <h2>Customer Support & Inquiries</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Segula Collection. All rights reserved.</p>
+    <p>Follow us on: 
+        <a href="https://instagram.com/segulacollection" target="_blank">Instagram</a> | 
+        <a href="https://facebook.com/segulacollection" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com/segulacollection" target="_blank">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html><img src="https://example.com/path/to/outfit-image.jpg" alt="Outfit and Accessories">
